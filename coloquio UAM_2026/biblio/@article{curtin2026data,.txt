@@ -1,9 +1,0 @@
-@article{curtin2026data,
-  title={Data Center Resource Consumption, Policy Priorities, and Regulatory Intervention},
-  author={Curtin, Owen},
-  journal={Env't L. Rep.},
-  volume={56},
-  pages={10113},
-  year={2026},
-  publisher={HeinOnline}
-}

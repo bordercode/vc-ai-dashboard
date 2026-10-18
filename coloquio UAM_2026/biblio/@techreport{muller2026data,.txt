@@ -1,9 +1,0 @@
-@techreport{muller2026data,
-  author = {Nicholas Z. Muller},
-  title = {The Social Cost of Data Centers: Air Pollution and Health Damages from U.S. Data Center Electricity Use},
-  institution = {National Bureau of Economic Research},
-  type = {Working Paper},
-  number = {35100},
-  year = {2026},
-  url = {https://www.nber.org/papers/w35100}
-}

@@ -1,0 +1,444 @@
+/* ============================================================
+   Academic presentation styling
+   ============================================================ */
+
+:root {
+  --accent: #008080;
+  --accent-dark: #005f5f;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --red: #d00000;
+  --amber: #d97706;
+  --amber-dark: #b45309;
+  --amber-bg: #fffbeb;
+}
+
+.reveal {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  color: var(--text);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  color: var(--accent-dark);
+}
+
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.5em; }
+.reveal h3 { font-size: 1.1em; color: var(--muted); font-weight: 400; }
+
+.reveal .slides section {
+  text-align: left;
+  padding: 0 40px;
+}
+
+.reveal .slides section.title-slide {
+  text-align: center;
+}
+
+.source-caption {
+  font-size: 0.42em;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.4em;
+}
+
+.chart-frame {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  display: block;
+}
+
+.logo-strip {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.logo-strip img {
+  height: 80px;
+  max-width: 180px;
+  width: auto;
+  object-fit: contain;
+}
+
+.reveal .slide-number {
+  font-size: 0.42em;
+  color: var(--muted);
+  background: transparent;
+  bottom: 12px;
+  right: 16px;
+}
+
+.reveal .progress span {
+  background: var(--accent);
+}
+
+.hl-red {
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* ============================================================
+   SLIDE 1 · Portada
+   ============================================================ */
+.slide1-wrapper {
+  position: relative;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.slide1-logo-colef {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  object-fit: contain;
+}
+
+.slide1-center {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slide1-title {
+  font-size: 1.45em !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.4em !important;
+  color: #005f5f;
+}
+
+.slide1-subtitle {
+  font-size: 0.95em !important;
+  color: #6b7280 !important;
+  font-weight: 400 !important;
+  margin-bottom: 1.6em !important;
+}
+
+.slide1-author {
+  font-size: 0.62em;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.slide1-author-name {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+
+.slide1-author-affil {
+  color: #6b7280;
+  margin-bottom: 0.6em;
+}
+
+.slide1-author-links a {
+  color: #008080;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.slide1-author-links a:hover {
+  border-bottom-color: #008080;
+}
+
+.slide1-email {
+  color: #b8860b !important;
+}
+.slide1-email:hover {
+  border-bottom-color: #b8860b !important;
+}
+
+.slide1-sep {
+  color: #d1d5db;
+  margin: 0 0.5em;
+}
+
+.slide1-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  vertical-align: middle;
+}
+
+.slide1-github svg {
+  vertical-align: middle;
+}
+
+.slide1-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: right;
+}
+
+.slide1-logo-uam {
+  height: 75px;
+  object-fit: contain;
+}
+
+.slide1-footer-text {
+  text-align: right;
+}
+
+.slide1-event {
+  font-size: 0.5em;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.slide1-tagline {
+  font-size: 0.45em;
+  color: #b22222;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0.2em 0 0 0;
+  font-variant: small-caps;
+}
+
+/* ============================================================
+   SLIDE 2 · Stack + IMPLICACIÓN panel  (estilo original)
+   ============================================================ */
+.stack-slide {
+  display: flex;
+  flex-direction: column;
+  height: 680px;
+  padding: 0 20px;
+}
+
+.stack-header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.stack-title {
+  font-size: 1.1em !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.2em !important;
+  color: #005f5f;
+}
+
+.stack-subtitle {
+  font-size: 0.78em !important;
+  color: #6b7280 !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+}
+
+.stack-layout {
+  display: flex;
+  gap: 28px;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 1 100%;
+  max-width: 640px;
+  justify-content: center;
+  transition: max-width 0.6s ease, flex 0.6s ease;
+}
+
+.stack-layout:has(.implication-panel:not(.fragment)) .stack {
+  flex: 1 1 60%;
+}
+
+.stack-layer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transform-origin: center;
+}
+
+.stack-layer:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(0, 128, 128, 0.15);
+}
+
+.stack-layer.is-zoomed {
+  transform: scale(1.06);
+  box-shadow: 0 10px 30px rgba(0, 128, 128, 0.30);
+  border-color: var(--accent);
+  z-index: 10;
+  position: relative;
+}
+
+.stack-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+}
+
+.stack-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.stack-apps .stack-icon     { background: #7c3aed; }
+.stack-apps                 { border-left: 5px solid #7c3aed; }
+
+.stack-llm .stack-icon      { background: #1d4ed8; }
+.stack-llm                  { border-left: 5px solid #1d4ed8; }
+
+.stack-dc .stack-icon       { background: #475569; }
+.stack-dc                   { border-left: 5px solid #475569; }
+
+.stack-chips .stack-icon    { background: #ea580c; }
+.stack-chips                { border-left: 5px solid #ea580c; }
+
+.stack-energy .stack-icon   { background: #16a34a; }
+.stack-energy               { border-left: 5px solid #16a34a; }
+
+.stack-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.stack-label {
+  font-size: 0.6em;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.stack-desc {
+  font-size: 0.46em;
+  color: var(--muted);
+}
+
+/* Panel derecho: IMPLICACIÓN (estilo original, NO unificado) */
+.implication-panel {
+  flex: 0 0 42%;
+  max-width: 460px;
+  background: var(--amber-bg);
+  border-top: 6px solid var(--amber);
+  border-radius: 10px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(217, 119, 6, 0.15);
+}
+
+.implication-panel-label {
+  font-size: 0.85em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--amber-dark);
+  margin-bottom: 0.6em;
+}
+
+.implication-panel-text {
+  font-size: 0.58em;
+  line-height: 1.5;
+  color: #1f2937;
+  margin: 0 0 0.6em 0;
+}
+
+.implication-panel-subtitle {
+  font-weight: 700;
+  color: var(--amber-dark);
+  margin-top: 0.4em;
+}
+
+.implication-panel-list {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.55em;
+  line-height: 1.5;
+  color: #1f2937;
+}
+
+.implication-panel-list li {
+  margin-bottom: 0.5em;
+}
+
+/* ============================================================
+   SLIDE 3 / 4 · Main chart + implication box
+   (estilo unificado: familia/color/peso del título)
+   ============================================================ */
+.slide3-title {
+  font-size: 1.05em !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.4em !important;
+  color: #005f5f;
+  text-align: left;
+}
+
+.implication-box {
+  max-width: 1000px;
+  margin: 10px auto 0;
+  background: var(--amber-bg);
+  border-left: 5px solid var(--amber);
+  border-radius: 8px;
+  padding: 10px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.implication-box--teal {
+  background: #f0fdfa;
+  border-left-color: var(--accent);
+}
+
+.implication-label {
+  flex-shrink: 0;
+  font-size: 0.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--amber-dark);
+  padding-top: 2px;
+}
+
+.implication-box--teal .implication-label {
+  color: var(--accent-dark);
+}
+
+.implication-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--accent-dark);
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 1.4;
+  margin: 0;
+}

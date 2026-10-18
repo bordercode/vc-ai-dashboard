@@ -1,7 +1,0 @@
-@techreport{akzel2026environmental,
-  author = {Miriam Akzel and Kaveh Madani},
-  title = {Environmental Cost of AI’s Energy Use: Carbon, Water and Land Footprints},
-  institution = {United Nations University Institute for Water, Environment and Health (UNU-INWEH)},
-  year = {2026},
-  url = {https://jp.unu.edu/media-relations/releases/environmental-cost-of-ais-enrgy-use-carbon-water-and-land-footprints.html}
-}

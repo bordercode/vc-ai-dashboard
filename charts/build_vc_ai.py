@@ -1,27 +1,28 @@
 """
 Genera un gráfico interactivo de la inversión global de VC (2021-2025)
-con desglose IA vs No-IA, y lo exporta como index.html autónomo
-para desplegar en Netlify.
+con desglose IA vs No-IA, y lo exporta como vc_ai.html autónomo.
 """
+
 import os
-OUT_DIR = os.path.join(os.path.dirname(__file__))
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+OUT_DIR = os.path.join(os.path.dirname(__file__))
+
 # ============================================================
-# 1. DATOS (fuente principal: Crunchbase vía CNBC TV18, feb 2026)
+# 1. DATOS
 # ============================================================
 df = pd.DataFrame({
     "year":       [2021, 2022, 2023, 2024, 2025],
-    "total_vc":   [702,  469,  307,  327,  405],   # miles de millones USD
+    "total_vc":   [702,  469,  307,  327,  405],
     "ai":         [97,   63,   64,   114,  202],
     "non_ai":     [605,  406,  243,  213,  203],
 })
 df["ai_share_pct"] = (df["ai"] / df["total_vc"] * 100).round(1)
 
 # ============================================================
-# 2. FIGURA: barras apiladas + línea de participación IA
+# 2. FIGURA
 # ============================================================
 fig = make_subplots(
     specs=[[{"secondary_y": True}]],
@@ -31,7 +32,6 @@ fig = make_subplots(
     ),
 )
 
-# --- Barras apiladas: No-IA (base) ---
 fig.add_trace(
     go.Bar(
         x=df["year"],
@@ -43,19 +43,17 @@ fig.add_trace(
     secondary_y=False,
 )
 
-# --- Barras apiladas: IA (encima) ---
 fig.add_trace(
     go.Bar(
         x=df["year"],
         y=df["ai"],
         name="Empresas de IA",
-        marker_color="#008080",
+        marker_color="#008080",   # ← TEAL
         hovertemplate="<b>%{x}</b><br>IA: $%{y:.0f} B<extra></extra>",
     ),
     secondary_y=False,
 )
 
-# --- Etiquetas del total sobre cada barra ---
 for _, row in df.iterrows():
     fig.add_annotation(
         x=row["year"],
@@ -66,7 +64,6 @@ for _, row in df.iterrows():
         font=dict(size=12, color="#222"),
     )
 
-# --- Línea: % de IA sobre el total (eje secundario) ---
 fig.add_trace(
     go.Scatter(
         x=df["year"],
@@ -75,7 +72,7 @@ fig.add_trace(
         mode="lines+markers+text",
         text=[f"{v:.0f}%" for v in df["ai_share_pct"]],
         textposition="top center",
-        line=dict(color="#d00000", width=5, dash="dot"),
+        line=dict(color="#d00000", width=5, dash="dot"),   # ← ROJO, MÁS GRUESA
         marker=dict(size=10, color="#d00000"),
         hovertemplate="<b>%{x}</b><br>Participación IA: %{y:.1f}%<extra></extra>",
     ),
@@ -88,7 +85,7 @@ fig.add_trace(
 fig.update_layout(
     title=dict(
         text=(
-            "La IA pasó de 1 de cada 7 dólares de VC (2021)"
+            "La IA pasó de 1 de cada 7 dólares de VC (2021) "
             "a 1 de cada 2 (2025)"
         ),
         x=0.5,
@@ -109,7 +106,7 @@ fig.update_layout(
         font=dict(size=12),
     ),
     hovermode="x unified",
-    margin=dict(t=110, b=130, l=70, r=70),
+    margin=dict(t=100, b=130, l=70, r=70),
 )
 
 fig.update_yaxes(
@@ -126,6 +123,7 @@ fig.update_yaxes(
     showgrid=False,
 )
 fig.update_xaxes(tickmode="array", tickvals=df["year"], tickfont=dict(size=13))
+
 # --- Fuente al pie del gráfico ---
 fig.add_annotation(
     text=(
@@ -143,7 +141,7 @@ fig.add_annotation(
 )
 
 # ============================================================
-# 4. EXPORTAR HTML AUTÓNOMO (para Netlify)
+# 4. EXPORTAR
 # ============================================================
 fig.write_html(
     os.path.join(OUT_DIR, "vc_ai.html"),
@@ -161,5 +159,5 @@ fig.write_html(
     },
 )
 
-print("✅ Generado: index.html")
+print("✅ Generado: vc_ai.html")
 print(df.to_string(index=False))
