@@ -3,7 +3,8 @@ Genera un gráfico interactivo de la inversión global de VC (2021-2025)
 con desglose IA vs No-IA, y lo exporta como index.html autónomo
 para desplegar en Netlify.
 """
-
+import os
+OUT_DIR = os.path.join(os.path.dirname(__file__))
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -48,7 +49,7 @@ fig.add_trace(
         x=df["year"],
         y=df["ai"],
         name="Empresas de IA",
-        marker_color="#e63946",
+        marker_color="#008080",
         hovertemplate="<b>%{x}</b><br>IA: $%{y:.0f} B<extra></extra>",
     ),
     secondary_y=False,
@@ -74,8 +75,8 @@ fig.add_trace(
         mode="lines+markers+text",
         text=[f"{v:.0f}%" for v in df["ai_share_pct"]],
         textposition="top center",
-        line=dict(color="#1d3557", width=3, dash="dot"),
-        marker=dict(size=10, color="#1d3557"),
+        line=dict(color="#d00000", width=5, dash="dot"),
+        marker=dict(size=10, color="#d00000"),
         hovertemplate="<b>%{x}</b><br>Participación IA: %{y:.1f}%<extra></extra>",
     ),
     secondary_y=True,
@@ -87,10 +88,8 @@ fig.add_trace(
 fig.update_layout(
     title=dict(
         text=(
-            "La IA pasó de 1 de cada 7 dólares de VC (2021) "
-            "a 1 de cada 2 (2025)<br>"
-            "<sup>Fuente: Crunchbase vía CNBC TV18 (feb 2026) · "
-            "Cifras en miles de millones USD</sup>"
+            "La IA pasó de 1 de cada 7 dólares de VC (2021)"
+            "a 1 de cada 2 (2025)"
         ),
         x=0.5,
         xanchor="center",
@@ -104,13 +103,13 @@ fig.update_layout(
     legend=dict(
         orientation="h",
         yanchor="bottom",
-        y=-0.18,
+        y=-0.12,
         xanchor="center",
         x=0.5,
         font=dict(size=12),
     ),
     hovermode="x unified",
-    margin=dict(t=110, b=90, l=70, r=70),
+    margin=dict(t=110, b=130, l=70, r=70),
 )
 
 fig.update_yaxes(
@@ -127,13 +126,28 @@ fig.update_yaxes(
     showgrid=False,
 )
 fig.update_xaxes(tickmode="array", tickvals=df["year"], tickfont=dict(size=13))
+# --- Fuente al pie del gráfico ---
+fig.add_annotation(
+    text=(
+        "Elaboración propia con datos de Crunchbase vía CNBC TV18 (feb 2026) · "
+        "Cifras en miles de millones USD"
+    ),
+    xref="paper",
+    yref="paper",
+    x=0.5,
+    y=-0.22,
+    xanchor="center",
+    yanchor="top",
+    showarrow=False,
+    font=dict(size=11, color="#555"),
+)
 
 # ============================================================
 # 4. EXPORTAR HTML AUTÓNOMO (para Netlify)
 # ============================================================
 fig.write_html(
-    "index.html",
-    include_plotlyjs="cdn",   # más ligero; Netlify sirve el CDN
+    os.path.join(OUT_DIR, "vc_ai.html"),
+    include_plotlyjs="cdn",
     full_html=True,
     config={
         "displayModeBar": True,
