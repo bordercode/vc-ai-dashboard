@@ -1,0 +1,27 @@
+México en el ecosistema que impulsa la revolución de la inteligencia artificial.
+
+Introducción  
+La generación de energía eléctrica es crucial para la adopción tecnológica que implica el desarrollo de la inteligencia artificial. El reconocimiento de este hecho como una base fundacional paras la adopción e implementación práctica en las economías a escala global se ha traducido por un impulso en la inversión destinada a la generación energética, particularmente a la generación de electricidad.
+De forma paralela la evidencia empírica permite afirmar que existen externalidades negativas asociadas a los procesos de generación eléctrica, particularmente vinculadas al deterioro del medio ambiente.
+La generación de inteligencia, mediante el proceso tecnológico que se agrupa en las 5 capas que describe Huang, (energía, sistemas computacionales-Chips, infraestructura-Centros de datos modelos-LLM, aplicaciones)
+
+
+
+Energía eólica Proyectos en México:
+Capacidad instalada 8,123 MW, parques eólicos operando 74
+Proyectos en 16 estados, 3,342 turbinas. Generación de 21.6 Twh . en 2025 o el equivalente al 6.11% de la generación de energía eléctrica nacional.
+Para poner este dato en perspectiva suponiendo un consumo eléctrico de 2000 KWh por hogar en México, 21.6 TWh es suficiente para cubrir el consumo de 10.8 millones de hogares.
+Energía solar 
+Mapa de los centros de datos actuales y proyectados.
+Gasto en desarrollo de infraestructura para generar energía eléctrica según energía limpia o energía convencional.
+ *Renewable power investment
+
+Uso de energía
+
+Inteligencia artificial: Es un proceso de 5 capas: 
+La primera capa es la generación de energía, esta permite el insumo con el que operan los sistemas computacionales. No podemos producir algo sin energía. Esta transforma la electricidad en matemáticas.
+La segunda capa son los sistemas computacionales, los procesadores: los “chips”. 
+La tercera capa se integra por infraestructura física: los centros de datos.
+La cuarta capa son los modelos: Un ejemplo clásico son los modelos de lenguaje de gran tamaño o (LLMs). Chat GPT, Deepseek, Claude, etc,
+La quinta capa son las aplicaciones.
+

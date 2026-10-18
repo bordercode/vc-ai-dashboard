@@ -1,0 +1,11 @@
+@article{diazbejarano2026thirsty,
+  author  = {Diaz Bejarano, Natalia and Valdivia, Andr{\'e}s},
+  title   = {Thirsty Forests and Expansive Droughts: The Environmental Impacts of Data Centers in Latin America},
+  journal = {Environment and Planning E: Nature and Space},
+  year    = {2026},
+  volume  = {9},
+  number  = {3},
+  pages   = {937--959},
+  doi     = {10.1177/25148486251409055},
+  url     = {https://doi.org/10.1177/25148486251409055}
+}

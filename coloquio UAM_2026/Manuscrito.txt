@@ -1,0 +1,54 @@
+# México en el ecosistema que impulsa la revolución de la inteligencia artificial. Implicaciones a escala local.
+
+## Introducción  
+
+La generación de energía eléctrica es crucial para la adopción tecnológica que supone el desarrollo de la inteligencia artificial. El reconocimiento de este hecho como una base fundacional para la adopción e implementación práctica en las economías a escala global, se ha traducido en un impulso de la inversión destinada a la generación energética, particularmente a la generación de electricidad. De hecho, acorde con proyecciones de la agencia de información energética  (EIA por sus siglas en inglés) se prevee que el consumo de electricidad asociado a los centros de datos se duplique entre 2026 y 2035, alcanzando el 112% hacia el 2035 @misc{iea2026datacentres. Adicionalmente, en el corto plazo (2026 a 2030) el crecimiento de la demanda global se proyecta a un impresionante ritmo anual de 14% (practicamente cuadrupicando la velocidad de crecimiento de la demanda electrica por el resto de los sectores) y con un pico que alcanza el 18% estimado entre 2026 y 2027 @iea2026datacentres.  
+
+Para estudiar el papel que un país como México juega en la transición hacia la adopción  de este paradigma tecnológico, es necesario tener presente el ecosistema industrial en el que esta economía digital se sustenta. Así, acorde con Huang, la generación de inteligencia mediante este proceso tecnológico fundamentalmente se puede agrupar en un stack de 5 capas: 1. Generación/disponibilidad de energía, 2. Desarrollo/disponibilidad de sistemas computacionales-Chips, 3. Infraestructura física-Centros de datos, 4. Modelos de lenguaje de gran escala (Large Languaje Models (LLM)) y  5. Desarrollo de aplicaciones. Este ecosistema tiene implicaciones de especial interés para un país como México cuya posición lo perfila como un potencial sitio para la localización de infraestructura en la tercera capa del stack descrito anteriormente.
+
+Sin embargo, a pesar de que la configuración tecnológica para la implementación de piezas de infraestrucutra crítica como los centros de datos esta claramente definida @iea2025energyai, la construcción de la infraestrucutra física para generación electrica requiere un horizonte de planeación de mayor tiempo e involucra la planeación de actores publicos y privados. En el caso de México concretamente, involucra la interaccón de actores estatales como CFE y los gobiernos locales. 
+Por este motivo la localización de proyectos de infraestructura que supone el avance de la era de la producción de inteligencia a escala masiva es un tema relevante desde la perespectiva de politica pública. 
+
+Lo anterior, sin omitir las consideraciones de sustentabilidad asociadas con el desarrollo de estos proyectos que generan externalidades negativas evidentes a escala local y que frecuentemente se localizan en comunidades con insipiente regulación que permita una proteccíón ante los efectos adversos o acorde con algunos autores en comunidades con una menor capacidad de gestión @misc{wang2026environmental.
+
+Diversos casos particulares sobre ubicación de infraestructura en este contexto son actualmente objeto de investigaciones en desarrollo con estudios pionerso emblemáticos en América Latina @article{diazbejarano2026thirsty y otros que ya tienen experiencia tangible sobre los efectos de la operación de estas piezas de infraestructura crítica en paises líderes en esta materia como Estados Unidos con el caso del condado de Loudon, Virginia, sitio que exhibe la mayor concentración de centros de datos en el mundo @article{curtin2026data *nota a pie* sito comunmente referido como el *Data Center Alley*
+
+
+De forma paralela al crecimeinto en inversión dirigida a la vertiente de infraestrucura y los procesos industriales que acompañan la adopción global de este paradigma, la evidencia empírica documentada permite afirmar que existen externalidades negativas asociadas a los procesos energéticos necesarios para avanzar en la adopcón masiva de esta innovación tecnológica, particularmente vinculadas al deterioro del medio ambiente,  @akzel2026environmental, @misc{ngata2025cloud, @muller2026data. La vertiente teórica sobre desigualdad y justicia ambiental, aborda algunos de los elementos de interés sobre todo en el contexto de la distribucón de los costos ambientales y sociales.
+
+En este contexto y desde la perspectiva de política pública tres interrogantes que esta investigación plantea son:, ¿qué postura esta fijando México y las entidades administrativas al interior de la federación ante el creciente interés por la construcción de centros de datos que acompaña la tendencia mundial para procesar los datos resultantes del incremento exponencial de usiarios de aplicaciones basadas en AI? 
+
+¿Cómo se ajustan las entidades gubernamentales locales al inminente desarrollo de infraestructura dirigida a satisfacer el crecimiento en la demanda eléctrica derivada de la operación de los centros de datos?
+
+¿Cuáles son las acciones estratégicas para solventar las restricciones energéticas que se tienen a escala regional dado el agresivo crecimiento de los proyectos de infraestructura que se pretenden realizar en el país?
+
+Aunado al análisis que estos cuestionameiuntos suponen, esta investigación tiene como objetivo primario abordar las implicaciones previsibles a escala local y la respuesta gubernamental ante la demanda por aumentar la capacidad energética dada la localización geografica de México respecto de uno de los paises lideres en el desarrollo de una tecnología que experimenta un crecimiendo exponencial y que proyecta transformaciones radicales en la producción de inteligencia. Transformaciones que requieren decisiones de infraestructura de gran escala que se acompañan con un uso intensivo de recursos y que acorde a la evidencia reciente presentan externalidades negativas a escala local. 
+
+La metodología propuesta del trabajo se basa en análisis exploratorio de datos. Se estudian series de tiempo para variables clave como generación electrica en el país con el objetivo de contrastar la capacidad actual en relación con la capacidad requerida para atender la demanda energética para la operación de los centros de datos proyectados. Se usan herramientas de modelación de series de tiempo para proyectar la demanda eléctrica requerida Y se hace uso de herramientas de análisis espacial para determinar los requierimientos de recursos estrategicos como agua en contraste con la disponibilidad regional. Adicionalmente 
+
+
+
+
+
+Energía eólica Proyectos en México:
+Capacidad instalada 8,123 MW, parques eólicos operando 74
+Proyectos en 16 estados, 3,342 turbinas. Generación de 21.6 Twh . en 2025 o el equivalente al 6.11% de la generación de energía eléctrica nacional.
+Para poner este dato en perspectiva suponiendo un consumo eléctrico de 2000 KWh por hogar en México, 21.6 TWh es suficiente para cubrir el consumo de 10.8 millones de hogares.
+Energía solar 
+
+Mapa de los centros de datos actuales y proyectados.
+Gasto en desarrollo de infraestructura para generar energía eléctrica según energía limpia o energía convencional.
+ *Renewable power investment
+
+Uso de energía
+
+Inteligencia artificial: Es un proceso de 5 capas: 
+La primera capa es la generación de energía, esta permite el insumo con el que operan los sistemas computacionales. No podemos producir algo sin energía. Esta transforma la electricidad en matemáticas.
+La segunda capa son los sistemas computacionales, los procesadores: los “chips”. 
+La tercera capa se integra por infraestructura física: los centros de datos.
+La cuarta capa son los modelos: Un ejemplo clásico son los modelos de lenguaje de gran tamaño o (LLMs). Chat GPT, Deepseek, Claude, etc,
+La quinta capa son las aplicaciones.
+
+Nota:   data center electricity consumption and air pollution. See @muller2026data. 
+
+Nota: La concentración de la demanda eléctrica para operación de los centros de datos consituye uno de los retos importantes en términos de los externalidades a escala local.

@@ -1,0 +1,9 @@
+@misc{ngata2025cloud,
+  author = {Wacuka Ngata and Noman Bashir and Michelle Westerlaken and Laurent Liote and Yasra Chandio and Elsa Olivetti},
+  title = {The Cloud Next Door: Investigating the Environmental and Socioeconomic Strain of Datacenters on Local Communities},
+  year = {2025},
+  eprint = {2506.03367},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CY},
+  url = {http://export.arxiv.org/pdf/2506.03367}
+}
