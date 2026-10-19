@@ -103,10 +103,15 @@
         </div>
       </section>
 
-      <!-- SLIDE 4 · Logos + IMPLICACIONES -->
+ 
+      <!-- ============================================================
+           SLIDE 4 · Logos + lista de empresas (colores) + IMPLICACIONES
+           ============================================================ -->
       <section>
         <h2>Los actores que concentran el capital</h2>
-        <p>En 2025, cinco empresas absorbieron <strong>84 mil millones USD</strong>: una quinta parte de todo el VC global.</p>
+        <p>En 2025, cinco empresas absorbieron <strong>84 mil millones USD</strong>:
+           una quinta parte de todo el VC global.</p>
+
         <div class="logo-strip">
           <img src="assets/logos/openai.svg"    class="animate__fadeInUp" data-delay="200" alt="OpenAI">
           <img src="assets/logos/anthropic.svg" class="animate__fadeInUp" data-delay="200" alt="Anthropic">
@@ -114,23 +119,117 @@
           <img src="assets/logos/prometheus.svg" class="animate__fadeInUp" data-delay="200" alt="Project Prometheus">
           <img src="assets/logos/xai.svg"       class="animate__fadeInUp" data-delay="200" alt="xAI">
         </div>
-        <p class="source-caption">Fuentes: rondas reportadas por Crunchbase, Bloomberg y comunicados corporativos (2025)</p>
+
+        <ul class="company-list">
+          <li class="c-black">OpenAI</li>
+          <li class="c-orange">Anthropic</li>
+          <li class="c-lightgray">Scale AI</li>
+          <li class="c-blue">Project Prometheus</li>
+          <li class="c-gray">xAI</li>
+        </ul>
+
+        <p class="source-caption">
+          Fuentes: rondas reportadas por Crunchbase, Bloomberg y comunicados corporativos (2025)
+        </p>
+
         <div class="implication-box implication-box--teal">
           <span class="implication-label">IMPLICACIONES</span>
-          <p class="implication-text">Concentración geográfica del capital: <strong>~80% en Norteamérica</strong>.</p>
+          <p class="implication-text">
+            Concentración geográfica del capital: <strong>~80% en Norteamérica</strong>.
+          </p>
         </div>
       </section>
 
-      <!-- SLIDE 5 · Desglose por subsegmento de IA -->
+      <!-- ============================================================
+           SLIDE 5 · Segmentos de inversión en IA + Data centers
+           ============================================================ -->
       <section>
-        <h2>Desglose por subsegmento de IA</h2>
-        <p style="color:#6b7280;font-style:italic;">[Aquí irá el gráfico genAI vs. infraestructura vs. aplicaciones — pendiente]</p>
+        <h2 class="slide3-title">
+          La infraestructura física concentra el capital:
+          <span class="hl-red">el 42% del capital de riesgo en IA</span>
+        </h2>
+
+        <div class="two-plots">
+          <div class="plot-item">
+            <iframe class="chart-frame chart-frame--small" src="charts/segments_oecd.html"></iframe>
+          </div>
+          <div class="plot-item">
+            <iframe class="chart-frame chart-frame--small" src="charts/datacenter_trend.html"></iframe>
+          </div>
+        </div>
+
+        <p class="chart-caption">
+          <strong>Izq:</strong> Elaboración propia con datos de OECD (feb 2026). La categoría "IT Infraestructura y Hosting"
+          incluye cómputo y modelos fundacionales, no solo data centers físicos. OECD no desagrega el "Resto";
+          Salud y Movilidad son estimaciones basadas en menciones cualitativas del informe.
+          <br>
+          <strong>Der:</strong> Capex combinado de hiperescaladores (Microsoft, Amazon, Alphabet/Google, Meta)
+          según estimaciones de industria (Houlihan Lokey / DCPulse). 2025 es proyección.
+        </p>
+
+        <div class="implication-box implication-box--teal">
+          <span class="implication-label">IMPLICACIONES</span>
+          <p class="implication-text">
+            El cambio no es solo de magnitud, sino de dirección. El capital de riesgo que antes
+            financiaba software ahora se redirige a <strong>"infraestructura tecnológica"</strong>:
+            chips, energía, manufactura, centros de datos.
+          </p>
+        </div>
       </section>
 
-      <!-- SLIDE 6 · Mapa -->
+      <!--       <!-- ============================================================
+           SLIDE 6 · Mapa de Data Centers + Panel de Datos
+           ============================================================ -->
       <section>
-        <h2>Concentración geográfica: ~80% en Norteamérica</h2>
-        <p style="color:#6b7280;font-style:italic;">[Aquí irá el mapa de inversión por región — pendiente]</p>
+        <h2 class="slide3-title">
+          México en el mapa de la infraestructura física:
+          <span class="hl-red">Data Centers operando y proyectados</span>
+        </h2>
+
+        <div class="slide6-layout">
+          
+          <!-- Panel izquierdo de datos -->
+          <div class="slide6-panel">
+            <div class="stat-box">
+              <div class="stat-year">2026</div>
+              <div class="stat-value">279 MW</div>
+              <div class="stat-desc">Capacidad instalada actual</div>
+            </div>
+            
+            <div class="stat-box stat-box--amber">
+              <div class="stat-year">2030</div>
+              <div class="stat-value">1.73 GW</div>
+              <div class="stat-desc">Proyección de capacidad</div>
+            </div>
+
+            <div class="stat-highlight">
+              <p class="stat-highlight-text">
+                Querétaro concentra entre el <strong>72% y 80%</strong> de la infraestructura en data centers nacional.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="slide6-map-container">
+            <iframe class="chart-frame chart-frame--map" src="charts/map_datacenters.html"></iframe>
+            <p class="chart-caption">
+              Elaboración propia con datos de <strong>Compute Atlas</strong> (CC BY 4.0) y MEXDC (2026).
+              El tamaño del círculo representa la capacidad instalada en MW.
+              Solo se muestran sitios operativos con capacidad reportada.
+            </p>
+          </div>
+        </div>
+
+        <!-- Caja de Implicaciones -->
+        <div class="implication-box implication-box--teal">
+          <span class="implication-label">IMPLICACIONES</span>
+          <p class="implication-text">
+            La distribución geográfica de los data centers en México no es aleatoria. 
+            Responde a dos factores estructurales muy concretos: la 
+            <span class="hl-red">disponibilidad de energía</span> y la cercanía a los 
+            <span class="hl-red">corredores industriales y comerciales</span>.
+          </p>
+        </div>
       </section>
 
       <!-- SLIDE 7 · Convergencia -->

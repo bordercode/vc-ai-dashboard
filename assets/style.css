@@ -216,7 +216,7 @@
 }
 
 /* ============================================================
-   SLIDE 2 · Stack + IMPLICACIÓN panel  (estilo original)
+   SLIDE 2 · Stack + IMPLICACIÓN panel
    ============================================================ */
 .stack-slide {
   display: flex;
@@ -344,7 +344,6 @@
   color: var(--muted);
 }
 
-/* Panel derecho: IMPLICACIÓN (estilo original, NO unificado) */
 .implication-panel {
   flex: 0 0 42%;
   max-width: 460px;
@@ -393,7 +392,6 @@
 
 /* ============================================================
    SLIDE 3 / 4 · Main chart + implication box
-   (estilo unificado: familia/color/peso del título)
    ============================================================ */
 .slide3-title {
   font-size: 1.05em !important;
@@ -441,4 +439,168 @@
   font-size: 0.75em;
   line-height: 1.4;
   margin: 0;
+}
+
+/* ============================================================
+   SLIDE 5 · Two plots side by side
+   ============================================================ */
+.two-plots {
+  display: flex;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.plot-item {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.chart-frame--small {
+  height: 440px;
+}
+
+.chart-caption {
+  font-size: 0.22em;
+  color: #9ca3af;
+  text-align: center;
+  margin: 4px auto 6px;
+  max-width: 1000px;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* ============================================================
+   SLIDE 4 · Company list with colored bullets
+   ============================================================ */
+.company-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px auto 0;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  font-size: 0.55em;
+  font-weight: 600;
+}
+
+.company-list li {
+  display: inline-block;
+  position: relative;
+  padding-left: 14px;
+}
+
+.company-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.c-black     { color: #111827; }
+.c-black::before     { color: #111827; }
+
+.c-orange    { color: #ea580c; }
+.c-orange::before    { color: #ea580c; }
+
+.c-lightgray { color: #9ca3af; }
+.c-lightgray::before { color: #9ca3af; }
+
+.c-blue      { color: #1d4ed8; }
+.c-blue::before      { color: #1d4ed8; }
+
+.c-gray      { color: #6b7280; }
+.c-gray::before      { color: #6b7280; }
+
+/* ============================================================
+   SLIDE 6 · Layout de dos columnas y panel de estadísticas
+   ============================================================ */
+.slide6-layout {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 440px; /* Ajusta la altura total del bloque */
+}
+
+.slide6-panel {
+  flex: 0 0 30%; /* Ocupa el 30% del ancho */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.slide6-map-container {
+  flex: 0 0 68%; /* Ocupa el 68% del ancho */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tarjetas de datos (2026 y 2030) */
+.stat-box {
+  background: #f8fafc;
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat-box--amber {
+  border-left-color: var(--amber);
+}
+
+.stat-year {
+  font-size: 0.45em;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  font-size: 1.1em;
+  font-weight: 800;
+  color: var(--accent-dark);
+  line-height: 1.1;
+  margin: 4px 0;
+}
+
+.stat-box--amber .stat-value {
+  color: var(--amber-dark);
+}
+
+.stat-desc {
+  font-size: 0.45em;
+  color: var(--muted);
+}
+
+/* Recuadro destacado de Querétaro */
+.stat-highlight {
+  background: #f0fdfa;
+  border: 1.5px dashed var(--accent);
+  border-radius: 8px;
+  padding: 12px 16px;
+  flex-grow: 1; /* Ocupa el espacio restante */
+  display: flex;
+  align-items: center;
+}
+
+.stat-highlight-text {
+  font-size: 0.48em;
+  line-height: 1.4;
+  color: var(--accent-dark);
+  margin: 0;
+  font-weight: 500;
+}
+
+.stat-highlight-text strong {
+  color: var(--red);
 }
