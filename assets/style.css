@@ -638,3 +638,25 @@
   border-radius: 8px;
   background: #f5f6f8;
 }
+
+/* Consideraciones finales · #/10 */
+.reveal .slides section.final-considerations-slide { height: 680px; box-sizing: border-box; padding: 12px 28px; }
+.final-eyebrow { font-size: 12px; letter-spacing: 1.6px; font-weight: 700; color: #627e87; }
+.reveal .final-considerations-slide h2 { font-size: 35px; color: #008080; margin: 9px 0 15px; }
+.reveal .final-considerations-slide .final-lead { font-size: 22px; line-height: 1.4; margin: 0 0 19px; }
+.final-metrics { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 20px; }
+.final-metrics article { background: #eef5f5; border-left: 5px solid #008080; padding: 14px 18px; }
+.final-metrics article.final-investment { background: #fff5e4; border-color: #d68b36; }
+.final-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #5c7982; }
+.final-metrics strong { display: block; font-size: 43px; color: #006f73; margin: 7px 0; }
+.final-metrics strong small { font-size: 19px; }
+.reveal .final-metrics p { font-size: 18px; line-height: 1.35; margin: 0; }
+.final-governance { margin-top: 20px; padding: 14px 18px; border: 1px solid #d8e5e6; background: #fff; }
+.reveal .final-governance p { margin: 7px 0 0; font-size: 20px; line-height: 1.4; }
+.final-takeaway { margin-top: 20px; padding: 17px 20px; background: #eaf4f4; border-left: 5px solid #008080; font-size: 25px; line-height: 1.35; color: #005f5f; }
+.reveal .final-considerations-slide .final-sources { margin: 14px 0 0; font-size: 11px; line-height: 1.4; color: #617b85; }
+.reveal .final-sources a { color: #386f7c; }
+
+/* Cierre del coloquio */
+.reveal .closing-event { font-size: 0.9em; color: #005f5f; margin-top: 1.3em; }
+.reveal .closing-date { font-size: 0.8em; color: #617b85; margin-top: 0.4em; }
